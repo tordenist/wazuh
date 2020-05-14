@@ -250,9 +250,9 @@ void test_getSyscheckConfig(void **state)
 
     cJSON *sys_dir = cJSON_GetObjectItem(sys_items, "directories");
     #if defined(TEST_SERVER) || defined(TEST_AGENT)
-    assert_int_equal(cJSON_GetArraySize(sys_dir), 6);
+    assert_int_equal(cJSON_GetArraySize(sys_dir), 8);
     #elif defined(TEST_WINAGENT)
-    assert_int_equal(cJSON_GetArraySize(sys_dir), 10);
+    assert_int_equal(cJSON_GetArraySize(sys_dir), 12);
     #endif
 
 
