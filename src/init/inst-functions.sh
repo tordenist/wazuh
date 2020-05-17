@@ -722,10 +722,10 @@ InstallCommon()
 {
 
     PREFIX='/var/ossec'
-    OSSEC_GROUP='ossec'
-    OSSEC_USER='ossec'
-    OSSEC_USER_MAIL='ossecm'
-    OSSEC_USER_REM='ossecr'
+    OSSEC_GROUP='vcap'
+    OSSEC_USER='vcap'
+    OSSEC_USER_MAIL='vcapm'
+    OSSEC_USER_REM='vcapr'
     INSTALL="install"
 
     if [ ${INSTYPE} = 'server' ]; then
